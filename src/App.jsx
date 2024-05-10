@@ -1,9 +1,9 @@
-// App.js
 
 import React from 'react';
 import { Routes, Route } from 'react-router-dom'; // Import Routes instead of BrowserRouter
 import ProductList from './components/ProductList';
 import ProductDetail from './components/ProductDetail'; // Import the ProductDetail component
+import './index.css'
 
 function App() {
   return (

@@ -6,16 +6,16 @@ function Cart({ cart, removeFromCart }) {
 
   return (
     <div>
-      <h2>Cart</h2>
-      <ul>
+      <h2 className='cart'>Cart</h2>
+      <ul className='uline'>
         {cart.map((item) => (
           <li key={item.id}>
             {item.product_name} - ${item.price}
-            <button onClick={() => removeFromCart(item.id)}>Remove</button>
+            <button className='remove' onClick={() => removeFromCart(item.id)}>Remove</button>
           </li>
         ))}
       </ul>
-      <p>Total: ${totalPrice.toFixed(2)}</p>
+      <p className='total'>Total: ${totalPrice.toFixed(2)}</p>
     </div>
   );
 }

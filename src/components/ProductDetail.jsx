@@ -30,11 +30,11 @@ function ProductDetail() {
     <div>
       {product ? (
         <div>
-        <h1>Product List</h1>
-          <h2>{product.product_name}</h2>
-          <p>Description: {product.product_description}</p>
-          <p>Price: ${product.price}</p>
-          <img className='img' src={product.image_url} alt={product.product_name} />
+        <h1 className='productlist'>Product Detail</h1>
+          <h2 className='name'>{product.product_name}</h2>
+          <p className='size'>Description: {product.product_description}</p>
+          <p className='size'>Price: ${product.price}</p>
+          <img src={product.image_url} alt={product.product_name} />
         </div>
       ) : (
         <p>Loading...</p>
