@@ -30,8 +30,29 @@
 .container button:hover {
   opacity: 0.7;
 }
-.carttext {
-  flex: '0 0 300px';
-  position: ab;
-  
+
+.productlist {
+  font-size: 50px;
+  font-style: italic;
+}
+.cart {
+  font-size: 30px;
+}
+.remove {
+  margin: 10px;
+  font-size: large;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 30px;
+}
+.uline {
+  font-size: 30px;
+}
+.size {
+  font-size: 40px;
+}
+.name {
+  font-size: 40px;
 }

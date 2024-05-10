@@ -40,8 +40,8 @@ function ProductList() {
 
   return (
     <div>
-      <h1>Product List</h1>
-        <Cart className='cart' cart={cart} removeFromCart={removeFromCart} />
+      <h1 className='productlist'>Product List</h1>
+        <Cart cart={cart} removeFromCart={removeFromCart} />
       <ul style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
         {productList.map((product) => (
           <li key={product.id} style={{ listStyleType: 'none', width: '300px' }}>
